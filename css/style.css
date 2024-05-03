@@ -1,0 +1,15 @@
+body {
+    background-color: #18181B;
+}
+
+.title {
+    width: 562px;
+    height: 174px;
+    font-family: Chakra Petch;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    color: #FFFFFF;
+}
