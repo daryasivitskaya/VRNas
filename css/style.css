@@ -8,6 +8,48 @@ body {
     background-color: #18181B;
 }
 
+span {
+    width: 93px;
+    height: 21px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Chakra Petch;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    letter-spacing: 0.14em;
+    text-align: left;
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);      
+}
+
+.img_about_us {
+    float: left;
+}
+
+.glassesman_about_us {
+    width: 517.98px;
+    height: 622px;
+    top: 1230px;
+    left: 144.29px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.glasses_about_us {
+    width: 196px;
+    height: 127.94px;
+    top: 1747px;
+    left: 452px;
+    gap: 0px;
+    opacity: 0px;
+    border: 1.17px solid #FFFFFF
+}
+
+.about_us {
+    float: right;
+}
+
 .title {
     width: 562px;
     height: 174px;
@@ -19,3 +61,28 @@ body {
     text-align: left;
     color: #FFFFFF;
 }
+
+.title_and_desk {
+    width: Hug (218px)px;
+    height: Hug (112px)px;
+    gap: 14px;
+    opacity: 0px;
+
+}
+
+.about_us_content {
+    width: 528px;
+    height: 112px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Chakra Petch;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    background: #D1D1D1;
+
+}
+
+
+
