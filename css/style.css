@@ -10,7 +10,122 @@ body{
   align-items: center;
   background-color: #1e1e1e;
   color: #FFFFFF;
-  max-width: 1140px;
   height: 100%;
   margin: 0;
+}
+
+.none{
+  display: none;
+}
+
+.container{
+  max-width: 1440px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header{
+  min-height: 1110px;
+  background-color: #1e1e1e;
+  padding-top: 40px;
+}
+
+.header-top{
+  height: 114px;
+}
+
+.header-content{
+  max-width: 1200px;
+  display: flex;
+}
+
+.header-content-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Nav */
+
+.nav{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  column-gap: 240px;
+}
+
+.nav-list{
+  display: flex;
+  column-gap: 64px;
+  list-style: none;
+}
+
+.nav-list a{
+  font-family: Chakra Petch;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: left;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-btn {
+  font-family: Chakra Petch;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #fff;
+  height: 52px;
+  width: 126px;
+  padding: 12px 24px;
+  border: 1px solid transparent;
+  background: transparent;
+  border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
+  border-image-slice: 1;
+}
+
+.VR-capabilities{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #252532;
+  height: 357px;
+  padding: 20px 64px;
+  display: flex;
+  align-items: center;
+}
+
+.item:nth-child(even){
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.capability-img{
+  margin-bottom: 42px;
+  object-fit: contain;
+}
+
+.capability-title{
+  margin-bottom: 12px;
+}
+
+.capability-title{
+font-family: Chakra Petch;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+}
+
+.capability-description{
+  font-family: Chakra Petch;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: #B0B0B2;
 }
