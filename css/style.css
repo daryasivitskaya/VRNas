@@ -28,12 +28,12 @@ body{
 .header{
   min-height: 1110px;
   background-color: #1e1e1e;
-  padding-top: 40px;
+  padding-top: 30px;
   position: relative;
 }
 
 .header-top{
-  height: 114px;
+  height: 100px;
 }
 
 .header-content{
@@ -81,6 +81,12 @@ body{
     text-align: center;
 }
 
+.header-content-btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgb(255, 255, 255, 0.3);
+    transition: opacity .3s;
+}
+
 .header-content-title{
     width: 80%;
 }
@@ -93,6 +99,18 @@ body{
     display: flex;
     align-items: center;
     margin-left: 15px;
+    margin-top: 40px;
+}
+
+.header-content-video{
+    position: relative;
+}
+
+.play-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 
 .user-img{
@@ -106,7 +124,16 @@ body{
 }
 
 .count-users{
+    font-family: Chakra Petch;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
     margin-right: 75px;
+}
+
+.count-users span{
+    font-weight: 300;
 }
 
 /* Nav */
@@ -134,6 +161,11 @@ body{
   text-decoration: none;
 }
 
+.nav-list a:hover{
+  font-weight: 500;
+}
+
+
 .nav-btn {
   font-family: Chakra Petch;
   font-size: 16px;
@@ -147,6 +179,10 @@ body{
   background: transparent;
   border-image: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
   border-image-slice: 1;
+}
+
+.nav-btn:hover{
+    background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
 }
 
 .VR-capabilities{
@@ -192,4 +228,8 @@ text-align: left;
   line-height: 28px;
   text-align: left;
   color: #B0B0B2;
+}
+
+.none {
+    display: none;
 }
