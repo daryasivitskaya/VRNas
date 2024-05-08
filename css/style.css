@@ -22,113 +22,93 @@ body {
 
 .about_us {
     max-width: 1238px;
+    max-height: 644.94px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.images {
     position: relative;
+    padding-bottom: 520px;
 }
 
-.image1 {
-    width: 517.98px;
-    height: 622px;
+.images_about_us {
+    float: left;
+    width: 50%;
 }
+
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    position: absolute;
+
+}
+
 
 .image2 {
-    position: absolute;
     top: 520px;
-    left: 312.06px;
-    width: 196px;
-    height: 127.94px;
+    margin-left: 300px;
     z-index: 3;
 }
 
 .image3 {
-    position: absolute;
-    top:auto;
-    left:0;
-    width: 364.62px;
-    height: 608.06px;
     z-index: 2;
 }
 
 .image4 {
-    position: absolute;
     top: 125px;
-    left: 0px;
-    width: 365px;
-    height: 496.53px;
     z-index: -1;
 }
 
 .content_about_us {
-    min-width: 398px;
-    max-width: 562px;
-    align-self: flex-end;
-    margin-bottom: 10px;
+    float: right;
+    width: 50%;
 }
 
 .content_about_us button {
-    width: 168px;
-    height: 60px;
     font-family: Chakra Petch;
     font-size: 14px;
     font-weight: 700;
     line-height: 14px;
     letter-spacing: 1.5px;
-    text-align: center;
     color: white;
     background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
 }
-.custom_list {
-    list-style-type: none;
+.content_about_us ul {
+        list-style-image: url('../img/check-box.png');
+        margin-left: 20px;
 }
+
 .content_about_us li {
-    width: 185px;
-    height: 28px;
     font-family: Chakra Petch;
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    text-align: left;
     color: #FFFFFF;
 
 }
 
 .content_about_us p {
-    width: 528px;
-    height: 112px;
     font-family: Chakra Petch;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    text-align: left;
     color: #D1D1D1;
 }
 
 .content_about_us h2 {
-    width: 562px;
-    height: 174px;
     font-family: Chakra Petch;
     font-size: 48px;
     font-weight: 600;
     line-height: 58px;
     letter-spacing: -0.005em;
-    text-align: left;
     color: #FFFFFF;
 }
 
 .content_about_us span {
-    width: 93px;
-    height: 21px;
     font-family: Chakra Petch;
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
     letter-spacing: 0.14em;
-    text-align: left;
     background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
     background-clip: text;
     color: transparent;
