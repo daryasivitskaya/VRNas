@@ -25,7 +25,6 @@ body {
     max-height: 644.94px;
     margin: 0 auto;
     position: relative;
-    padding-bottom: 520px;
 }
 
 .images_about_us {
@@ -39,7 +38,6 @@ body {
 .image3,
 .image4 {
     position: absolute;
-
 }
 
 
@@ -64,6 +62,8 @@ body {
 }
 
 .content_about_us button {
+    width: 168px;
+    height: 50px;
     font-family: Chakra Petch;
     font-size: 14px;
     font-weight: 700;
