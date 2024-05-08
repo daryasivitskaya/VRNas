@@ -5,7 +5,6 @@
 }
 
 body{
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: #1e1e1e;
@@ -19,7 +18,7 @@ body{
 }
 
 .container{
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -29,7 +28,6 @@ body{
   min-height: 1110px;
   background-color: #1e1e1e;
   padding-top: 30px;
-  position: relative;
 }
 
 .header-top{
@@ -38,10 +36,14 @@ body{
 
 .header-content{
   max-width: 1200px;
-  display: flex;
+  margin: 0 auto;
 }
 
 .header-content-block{
+    display: flex;
+}
+
+.header-content-text{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -186,17 +188,13 @@ body{
 }
 
 .VR-capabilities{
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #252532;
-  height: 357px;
-  padding: 20px 64px;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 1200px;
+  background: #252532;
+  height: 357px;
+  padding: 20px 64px;
 }
 
 .item:nth-child(even){
@@ -228,8 +226,4 @@ text-align: left;
   line-height: 28px;
   text-align: left;
   color: #B0B0B2;
-}
-
-.none {
-    display: none;
 }
