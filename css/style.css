@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap');
+
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -11,18 +14,7 @@ body{
   color: #FFFFFF;
   height: 100%;
   margin: 0;
-}
-
-.chakra-petch-regular {
   font-family: "Chakra Petch", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.chakra-petch-semibold {
-  font-family: "Chakra Petch", sans-serif;
-  font-weight: 600;
-  font-style: normal;
 }
 
 .none{
@@ -239,12 +231,18 @@ text-align: left;
   text-align: left;
   color: #B0B0B2;
 }
+/* Второй блок */
 
 .about_us {
-  max-width: 1238px;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  width: 65%;
+  min-height: 600px;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 4px solid #b59f5b;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .images {
@@ -252,12 +250,13 @@ text-align: left;
 }
 
 .image1 {
-  width: 517.98px;
-  height: 622px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .image2 {
-  position: absolute;
   top: 520px;
   left: 312.06px;
   width: 196px;
@@ -265,30 +264,10 @@ text-align: left;
   z-index: 3;
 }
 
-.image3 {
-  position: absolute;
-  top:auto;
-  left:0;
-  width: 364.62px;
-  height: 608.06px;
-  z-index: 2;
-}
-
-.image4 {
-  position: absolute;
-  top: 125px;
-  left: 0px;
-  width: 365px;
-  height: 496.53px;
-  z-index: -1;
-}
-
 .content_about_us {
-  min-width: 398px;
-  max-width: 562px;
   align-self: flex-end;
-  margin-bottom: 10px;
 }
+
 
 .content_about_us button {
   width: 168px;
