@@ -71,6 +71,7 @@ body{
 }
 
 .header-content-btn{
+    position: relative;
     text-transform: uppercase;
     color: #FFFFFF;
     background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
@@ -81,17 +82,38 @@ body{
     line-height: 14px;
     letter-spacing: 1.5px;
     text-align: center;
+    z-index: 1;
+    
 }
-
-.header-content-btn:hover{
-    cursor: pointer;
-    box-shadow: 5px 5px 15px rgb(255, 255, 255, 0.3);
-    transition: opacity .3s;
+ 
+.header-content-btn:before {
+  content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#0cbaf1), to(#e95ce9));
+    background: -o-linear-gradient(left, #0cbaf1 0, #e95ce9 100%);
+    background: linear-gradient(90deg, #0cbaf1 0, #e95ce9 100%);
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    opacity: 0;
+    -webkit-transition: opacity .3s ease 0s;
+    -o-transition: opacity .3s ease 0s;
+    transition: opacity .3s ease 0s;
+}
+ 
+.header-content-btn:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear;
+  z-index: -1;
 }
 
 .header-content-title{
     width: 80%;
-}
+} 
 
 .header-content-paragraph{
     width: 65%;
@@ -120,8 +142,6 @@ body{
 }
 
 .user-img img{
-    /* border: 0.79px solid #18181B; */
-    /* border-radius: 50%; */
     margin-left: -15px;
 }
 
@@ -144,7 +164,6 @@ body{
   display: flex;
   align-items:center;
   justify-content: space-between;
-  column-gap: 240px;
 }
 
 .nav-list{
@@ -187,39 +206,38 @@ body{
     background: linear-gradient(90deg, #0CBAF1 0%, #E95CE9 100%);
 }
 
-.VR-capabilities{
+.VR-capabilities {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
   background: #252532;
   height: 357px;
-  padding: 20px 64px;
+  padding: 20px 50px;
 }
 
-.item:nth-child(even){
-  margin-left: 50px;
-  margin-right: 50px;
+.item {
+  width: calc(33.33% - 40px); 
+  margin: 0 20px;
 }
 
-.capability-img{
-  margin-bottom: 42px;
+.capability-img {
+  margin-bottom: 42px; 
   object-fit: contain;
 }
 
-.capability-title{
+.capability-title {
   margin-bottom: 12px;
+  font-family: Chakra Petch;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
 }
 
-.capability-title{
-font-family: Chakra Petch;
-font-size: 20px;
-font-weight: 400;
-line-height: 26px;
-text-align: left;
-}
-
-.capability-description{
+.capability-description {
   font-family: Chakra Petch;
   font-size: 14px;
   font-weight: 400;
